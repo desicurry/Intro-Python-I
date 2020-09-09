@@ -39,6 +39,9 @@ def make_calendar(month=datetime.today().month, year=datetime.today().year):
 if len(sys.argv) == 3:    
     make_calendar(int(sys.argv[1]), int(sys.argv[2]))
 
+if len(sys.argv) == 2:
+    make_calendar(int(sys.argv[1]))
+
 # No input - Today's date
 else:
     make_calendar()
